@@ -73,6 +73,7 @@ class NotesDatabase {
       table,
       note.toJson(),
     );
+    print("successful");
     return note.copy(id: id);
   }
 
@@ -103,6 +104,7 @@ class NotesDatabase {
 
     final result = await db.query(table, orderBy: orderBy);
 
+    print("successful");
     return result.map((json) => Note.fromJson(json)).toList();
   }
 
