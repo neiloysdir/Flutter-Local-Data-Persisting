@@ -55,13 +55,10 @@ class _HomeScreenState extends State<HomeScreen> {
               print(notes!.length);
             }
           },
-          child: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Text(
-              "Create",
-              style: TextStyle(
-                color: Colors.black,
-              ),
+          child: Text(
+            "Create",
+            style: TextStyle(
+              color: Colors.black,
             ),
           ),
         ),
