@@ -55,11 +55,16 @@ class _HomeScreenState extends State<HomeScreen> {
               print(notes!.length);
             }
           },
-          child: Text(
-            "Create",
-            style: TextStyle(
-              color: Colors.black,
-            ),
+          child: Column(
+            children: [
+              Icon(Icons.add),
+              Text(
+                "Create",
+                style: TextStyle(
+                  color: Colors.black,
+                ),
+              ),
+            ],
           ),
         ),
       ),
