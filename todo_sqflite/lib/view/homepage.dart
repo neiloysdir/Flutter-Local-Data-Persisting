@@ -56,12 +56,14 @@ class _HomeScreenState extends State<HomeScreen> {
             }
           },
           child: Column(
-            children: [
+            children: const [
               Icon(Icons.add),
               Text(
                 "Create",
                 style: TextStyle(
                   color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.bold,
                 ),
               ),
             ],
